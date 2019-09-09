@@ -2,7 +2,7 @@ import styled, { ThemeProvider } from 'styled-components';
 
 import Header from './Header';
 import Meta from './Meta';
-import theme from './styles';
+import { theme, GlobalStyle } from './styles';
 
 const StyledPage = styled.div`
   background: white;
@@ -17,11 +17,14 @@ const Inner = styled.div`
 
 const Page = ({ children }) => (
   <ThemeProvider theme={theme}>
-    <StyledPage>
-      <Meta />
-      <Header />
-      <Inner>{children}</Inner>
-    </StyledPage>
+    <>
+      <GlobalStyle />
+      <StyledPage>
+        <Meta />
+        <Header />
+        <Inner>{children}</Inner>
+      </StyledPage>
+    </>
   </ThemeProvider>
 );
 
