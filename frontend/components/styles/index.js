@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-size: 1.5rem;
     line-height: 2;
-    font-family: 'radnika_next';
+    font-family: 'radnika_next' sans-serif;
   }
 
   a {

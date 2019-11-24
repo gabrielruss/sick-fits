@@ -1,6 +1,8 @@
+import Items from '../components/Items';
+
 const Home = () => (
   <>
-    <h1>Home</h1>
+    <Items />
   </>
 );
 
